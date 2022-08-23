@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>larissagalao.com.github</groupId>
-	<artifactId>finance-control</artifactId>
+	<artifactId>financal-control</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>finance-control</name>
+	<name>financial-control</name>
 	<description>Spring Boot project</description>
 	<properties>
 		<java.version>11</java.version>

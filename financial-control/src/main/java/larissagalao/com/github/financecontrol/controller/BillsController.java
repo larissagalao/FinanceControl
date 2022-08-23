@@ -1,4 +1,4 @@
-package larissagalao.com.github.financecontrol.repositories.controller;
+package larissagalao.com.github.financecontrol.controller;
 
 import larissagalao.com.github.financecontrol.entities.Bills;
 import larissagalao.com.github.financecontrol.repositories.BillsRepository;

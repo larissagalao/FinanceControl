@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-public class FinanceControlApplication {
+public class FinancialControlApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(FinanceControlApplication.class, args);
+		SpringApplication.run(FinancialControlApplication.class, args);
 
 	}
 
