@@ -1,4 +1,4 @@
-package larissagalao.com.github.financecontrol.entities;
+package larissagalao.com.github.financialcontrol.entities;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 

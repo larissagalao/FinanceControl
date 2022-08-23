@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>larissagalao.com.github</groupId>
-	<artifactId>financal-control</artifactId>
+	<artifactId>financial-control</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>financial-control</name>
 	<description>Spring Boot project</description>

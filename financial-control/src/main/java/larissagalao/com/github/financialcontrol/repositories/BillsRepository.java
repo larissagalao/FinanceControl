@@ -1,6 +1,6 @@
-package larissagalao.com.github.financecontrol.repositories;
+package larissagalao.com.github.financialcontrol.repositories;
 
-import larissagalao.com.github.financecontrol.entities.Bills;
+import larissagalao.com.github.financialcontrol.entities.Bills;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

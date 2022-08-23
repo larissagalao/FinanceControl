@@ -1,7 +1,7 @@
-package larissagalao.com.github.financecontrol.controller;
+package larissagalao.com.github.financialcontrol.controller;
 
-import larissagalao.com.github.financecontrol.entities.Bills;
-import larissagalao.com.github.financecontrol.repositories.BillsRepository;
+import larissagalao.com.github.financialcontrol.entities.Bills;
+import larissagalao.com.github.financialcontrol.repositories.BillsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
