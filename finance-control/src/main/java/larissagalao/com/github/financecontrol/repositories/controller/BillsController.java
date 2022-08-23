@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/contas")
+@RequestMapping("/bills")
 public class BillsController {
 
     private final BillsRepository repository;
@@ -38,7 +38,7 @@ public class BillsController {
     }
 
     @GetMapping("/valueof/{s}")
-    public Integer teste(@PathVariable String s){
+    public Integer valueOf(@PathVariable String s){
         return this.repository.totalbyType(s);
     }
 
