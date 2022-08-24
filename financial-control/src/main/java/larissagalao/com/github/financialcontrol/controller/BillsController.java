@@ -4,7 +4,6 @@ import larissagalao.com.github.financialcontrol.entities.Bills;
 import larissagalao.com.github.financialcontrol.entities.Graph;
 import larissagalao.com.github.financialcontrol.repositories.BillsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
@@ -20,6 +19,10 @@ public class BillsController {
         this.repository = repository;
     }
 
+  /*
+
+    `` Este método está comentado pois a inserção de dados está sendo feita pelo arquivo CSV ``
+
     @PostMapping
     @RequestMapping("/repository")
     @ResponseStatus(HttpStatus.CREATED)
@@ -27,11 +30,21 @@ public class BillsController {
         return repository.save(bill);
     }
 
+   */
+
+    /*
+
+    `` Este método está comentado pois a remoção de dados poderá ser feita pelo arquivo CSV ``
+
+
     @DeleteMapping("{id}")
     @ResponseStatus(HttpStatus.OK)
     public void delete(@PathVariable Integer id){
         repository.deleteById(id);
     }
+
+    */
+
 
     @GetMapping("/list")
     public List<Bills> listAll(){

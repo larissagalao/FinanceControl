@@ -15,7 +15,7 @@ public class Graph extends JFrame {
 
     public void createGraph(HashMap<String, Integer> hashMap){
 
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setDefaultCloseOperation(HIDE_ON_CLOSE);
         setName("Graph 1");
         setSize(700, 400);
 
