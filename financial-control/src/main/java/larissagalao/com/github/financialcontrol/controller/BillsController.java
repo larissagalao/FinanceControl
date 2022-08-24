@@ -70,7 +70,6 @@ public class BillsController {
         return set;
     }
 
-
     @GetMapping("hash")
     public HashMap<String, Integer> returnHash(){
 
@@ -92,7 +91,6 @@ public class BillsController {
 
     }
 
-
-    }
+}
 
 

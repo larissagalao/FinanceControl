@@ -9,7 +9,6 @@ import org.jfree.data.category.DefaultCategoryDataset;
 
 import javax.swing.*;
 import java.util.HashMap;
-import java.util.Map;
 
 
 public class Graph extends JFrame {
