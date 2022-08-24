@@ -57,13 +57,17 @@ public class BillsController {
     }
 
     @GetMapping("/valueof/{s}")
-    public Integer valueOf(@PathVariable String s){
-        return this.repository.totalbyType(s);
+    public String valueOf(@PathVariable String s){
+
+        if(this.repository.totalbyType(s) == null){
+            return "Não ha gastos com " + s;
+        }
+        return " Valor gasto com " + s + ": R$ " + this.repository.totalbyType(s);
     }
 
     @GetMapping("/total")
-    public Integer total(){
-        return this.repository.total();
+    public String total(){
+        return "O valor total de gastos foi de: R$ " + this.repository.total();
     }
 
     @GetMapping("/graph")
@@ -84,11 +88,11 @@ public class BillsController {
     }
 
     @GetMapping("hash")
-    public HashMap<String, Integer> returnHash(){
+    public HashMap<String, Double> returnHash(){
 
         List<String> list1 = this.repository.types();
         Set<String> set = new HashSet<>();
-        HashMap<String, Integer> hashMap = new HashMap<String,Integer>();
+        HashMap<String, Double> hashMap = new HashMap<String,Double>();
 
         for(String s : list1){
             set.add(s);
@@ -97,7 +101,7 @@ public class BillsController {
         String[] s = set.toArray(new String[set.size()]);
 
         for(String string : s){
-            hashMap.put(string, valueOf(string));
+            hashMap.put(string, this.repository.totalbyType(string));
         }
 
         return hashMap;

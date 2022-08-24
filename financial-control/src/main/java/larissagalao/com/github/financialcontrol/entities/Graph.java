@@ -13,7 +13,7 @@ import java.util.HashMap;
 
 public class Graph extends JFrame {
 
-    public void createGraph(HashMap<String, Integer> hashMap){
+    public void createGraph(HashMap<String, Double> hashMap){
 
         setDefaultCloseOperation(HIDE_ON_CLOSE);
         setName("Graph 1");
