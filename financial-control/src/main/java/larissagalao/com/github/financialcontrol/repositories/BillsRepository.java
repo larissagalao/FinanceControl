@@ -18,4 +18,7 @@ public interface BillsRepository extends JpaRepository<Bills, Integer> {
     @Query(value = "SELECT sum(valor) FROM Bills where tipo=?1")
     Integer totalbyType(String string);
 
+    @Query(value = "SELECT tipo FROM Bills")
+    List<String> types();
+
 }
