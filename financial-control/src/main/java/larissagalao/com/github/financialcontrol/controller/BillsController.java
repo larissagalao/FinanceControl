@@ -10,6 +10,7 @@ import java.util.*;
 
 @RestController
 @RequestMapping("/bills")
+@CrossOrigin("*")
 public class BillsController {
 
     private final BillsRepository repository;
@@ -19,7 +20,7 @@ public class BillsController {
         this.repository = repository;
     }
 
-  /*
+   /*
 
     `` Este método está comentado pois a inserção de dados está sendo feita pelo arquivo CSV ``
 
@@ -66,8 +67,8 @@ public class BillsController {
     }
 
     @GetMapping("/total")
-    public String total(){
-        return "O valor total de gastos foi de: R$ " + this.repository.total();
+    public Double total(){
+        return this.repository.total();
     }
 
     @GetMapping("/graph")

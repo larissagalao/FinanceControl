@@ -16,8 +16,7 @@ public class Bills {
     private Double valor;
 
     @Column(nullable = false)
-    @JsonFormat(pattern = "dd/MM/yyyy")
-    private Date dia;
+    private String dia;
 
     @Column(nullable = false)
     private String tipo;
@@ -42,11 +41,11 @@ public class Bills {
         this.valor = valor;
     }
 
-    public Date getDia() {
+    public String getDia() {
         return dia;
     }
 
-    public void setDia(Date dia) {
+    public void setDia(String dia) {
         this.dia = dia;
     }
 }

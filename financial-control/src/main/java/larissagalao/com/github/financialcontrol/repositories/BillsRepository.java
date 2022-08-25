@@ -13,7 +13,7 @@ public interface BillsRepository extends JpaRepository<Bills, Integer> {
     List<Bills> findByTipo(String type);
 
     @Query(value = "SELECT sum(valor) FROM Bills")
-    Integer total();
+    Double total();
 
     @Query(value = "SELECT sum(valor) FROM Bills where tipo=?1")
     Double totalbyType(String string);
